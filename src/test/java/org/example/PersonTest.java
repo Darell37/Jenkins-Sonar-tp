@@ -7,8 +7,13 @@ class PersonTest {
 
     @Test
     void testGetDisplayName() {
+        /** le «arrange» crée
+         *  un objet Personne qui sera testé:
+         */
         Person person = new Person("Josh", "Hayden");
+        // act
         String displayName = person.getDisplayName();
+        // assert
         assertEquals("Josh, Hayden", displayName);
     }
 }
